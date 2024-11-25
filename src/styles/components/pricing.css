@@ -1,10 +1,28 @@
 .pricing {
   padding: 6rem 2rem;
+  background-color: var(--background);
+}
+
+.section-description {
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.save-banner {
+  background-color: var(--accent);
+  color: var(--white);
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin: 0 auto 3rem;
+  max-width: 300px;
+  font-weight: 600;
 }
 
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
@@ -15,10 +33,24 @@
   padding: 2rem;
   text-align: center;
   transition: transform 0.3s ease;
+  border: 1px solid rgba(229, 155, 37, 0.1);
 }
 
 .pricing-card:hover {
   transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.plan-icon {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.pricing-card h3 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .price {
@@ -28,12 +60,28 @@
 .amount {
   font-size: 2.5rem;
   font-weight: bold;
-  color: var(--primary);
+  color: var(--white);
 }
 
 .period {
   color: var(--white);
   opacity: 0.8;
+}
+
+.plan-details {
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(229, 155, 37, 0.1);
+  border-bottom: 1px solid rgba(229, 155, 37, 0.1);
+}
+
+.plan-details p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  color: var(--white);
 }
 
 .features-list {
@@ -43,7 +91,8 @@
 
 .features-list li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  opacity: 0.9;
 }
 
 .select-plan {
@@ -52,8 +101,16 @@
   padding: 0.8rem 2rem;
   border-radius: 4px;
   width: 100%;
+  font-weight: 600;
 }
 
 .select-plan:hover {
   background: var(--primary);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
 } 

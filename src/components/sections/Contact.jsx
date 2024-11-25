@@ -1,3 +1,5 @@
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
+
 const Contact = () => {
   return (
     <section id="contact" className="contact">
@@ -6,13 +8,19 @@ const Contact = () => {
         <div className="contact-content">
           <div className="contact-info">
             <h3>Contact Information</h3>
-            <p>Email: info@rentmaster.com</p>
-            <p>Phone: (555) 123-4567</p>
-            <p>Address: 123 Property Street, Real Estate City, 12345</p>
+            <p><FaEnvelope className="contact-icon" /> info@rentmaster.com</p>
+            <p><FaPhone className="contact-icon" /> (555) 123-4567</p>
+            <p><FaMapMarkerAlt className="contact-icon" /> 123 Property Street, Real Estate City, 12345</p>
             <div className="social-links">
-              <a href="#" className="social-link">Facebook</a>
-              <a href="#" className="social-link">LinkedIn</a>
-              <a href="#" className="social-link">Twitter</a>
+              <a href="#" className="social-link" aria-label="Facebook">
+                <FaFacebookF />
+              </a>
+              <a href="#" className="social-link" aria-label="LinkedIn">
+                <FaLinkedinIn />
+              </a>
+              <a href="#" className="social-link" aria-label="Twitter">
+                <FaTwitter />
+              </a>
             </div>
           </div>
           <form className="contact-form">
