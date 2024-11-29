@@ -1,11 +1,23 @@
 import '../../styles/components/hero.css'
+import HeroBg from '../../assets/img/HeroBg.jpg'
 
 const Hero = () => {
   return (
-    <section id="home" className="hero">
-      <h1>Simplify Property Management with RentMaster</h1>
-      <p>The all-in-one solution for property managers and landlords</p>
-      <button className="cta-button">Schedule a Demo</button>
+    <section id="hero" className="hero">
+      <div className="hero-background">
+        <img 
+          src={HeroBg}
+          alt="Modern Building"
+        />
+      </div>
+      
+      <div className="hero-content">
+        <div className="hero-text">
+          <h1>Transform Your Property Management Experience</h1>
+          <p>Streamline operations, boost efficiency, and delight your tenants</p>
+          <button className="cta-button">Get Started</button>
+        </div>
+      </div>
     </section>
   )
 }

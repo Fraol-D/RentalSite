@@ -1,4 +1,4 @@
-import '../../styles/components/navbar.css'
+import "../../styles/components/navbar.css";
 
 const Navbar = () => {
   return (
@@ -19,7 +19,7 @@ const Navbar = () => {
         <button className="signup-btn">Sign Up</button>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar 
+export default Navbar;

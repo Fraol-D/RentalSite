@@ -1,6 +1,19 @@
 .about {
-  background-color: var(--secondary);
+  position: relative;
   padding: 6rem 2rem;
+  background-color: var(--secondary);
+}
+
+.about-image {
+  margin-bottom: 3rem;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 .about-content {

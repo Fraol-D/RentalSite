@@ -1,9 +1,18 @@
+import AboutImg from '../../assets/img/About.jpg'
+
 const About = () => {
   return (
     <section id="about" className="about">
       <div className="container">
         <h2>About RentMaster</h2>
         <div className="about-content">
+          <div className="about-image">
+            <img 
+              src={AboutImg}
+              alt="RentMaster Team"
+            />
+          </div>
+          
           <div className="about-text">
             <p>RentMaster is your comprehensive solution for modern property management. We help landlords and property managers streamline their operations and boost efficiency.</p>
             <div className="mission-vision">
