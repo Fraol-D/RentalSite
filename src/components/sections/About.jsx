@@ -1,4 +1,5 @@
-import AboutImg from '../../assets/img/About.jpg'
+import Lottie from 'lottie-react'
+import animationData from '../../assets/animations/property-dashboard.json'
 
 const About = () => {
   return (
@@ -6,24 +7,23 @@ const About = () => {
       <div className="container">
         <h2>About RentMaster</h2>
         <div className="about-content">
-          <div className="about-image">
-            <img 
-              src={AboutImg}
-              alt="RentMaster Team"
+          <div className="about-animation">
+            <Lottie 
+              animationData={animationData}
+              loop={true}
+              autoplay={true}
+              style={{ width: '500px', margin: '20px auto 2rem' }}
             />
           </div>
-          
-          <div className="about-text">
-            <p>RentMaster is your comprehensive solution for modern property management. We help landlords and property managers streamline their operations and boost efficiency.</p>
-            <div className="mission-vision">
-              <div className="mission">
-                <h3>Our Mission</h3>
-                <p>To simplify property management through innovative technology solutions.</p>
-              </div>
-              <div className="vision">
-                <h3>Our Vision</h3>
-                <p>To become the leading property management platform trusted by property managers worldwide.</p>
-              </div>
+
+          <div className="mission-vision">
+            <div className="mission">
+              <h3>Our Mission</h3>
+              <p>To simplify property management through innovative technology solutions.</p>
+            </div>
+            <div className="vision">
+              <h3>Our Vision</h3>
+              <p>To become the leading property management platform trusted by property managers worldwide.</p>
             </div>
           </div>
         </div>

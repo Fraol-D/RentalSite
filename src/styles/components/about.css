@@ -4,18 +4,6 @@
   background-color: var(--secondary);
 }
 
-.about-image {
-  margin-bottom: 3rem;
-}
-
-.about-image img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-}
-
 .about-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -31,6 +19,33 @@
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 3rem;
+}
+
+.about-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 4rem;
+  position: relative;
+}
+
+.about-animation:before,
+.about-animation:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 2px;
+  background: var(--primary);
+  opacity: 0.3;
+}
+
+.about-animation:before {
+  right: calc(50% + 160px);
+}
+
+.about-animation:after {
+  left: calc(50% + 160px);
 }
 
 .mission-vision {

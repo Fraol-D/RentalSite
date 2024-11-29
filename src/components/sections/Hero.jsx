@@ -8,6 +8,7 @@ const Hero = () => {
         <img 
           src={HeroBg}
           alt="Modern Building"
+          className="hero-bg-image"
         />
       </div>
       
