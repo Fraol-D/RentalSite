@@ -16,17 +16,6 @@
   padding: 2rem;
 }
 
-.mission {
-  flex: 1;
-  padding: 3rem;
-  background: var(--background);
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
 .mission:before {
   content: '';
   position: absolute;
@@ -52,17 +41,6 @@
   line-height: 1.8;
   color: var(--white);
   opacity: 0.9;
-}
-
-.about-animation {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background: rgba(0, 225, 255, 0.05);
-  border-radius: 12px;
-  padding: 2rem;
 }
 
 .about-animation:before {

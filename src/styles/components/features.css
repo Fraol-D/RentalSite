@@ -17,6 +17,7 @@
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s ease;
+  opacity: 0;
 }
 
 .feature-card:hover {
@@ -32,4 +33,5 @@
   line-height: 1.6;
   color: var(--white);
   opacity: 0.9;
-} 
+}
+ 

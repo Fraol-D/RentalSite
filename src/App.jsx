@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { setupAnimationObserver } from './utils/animationObserver'
 import Navbar from './components/layout/Navbar'
 import Hero from './components/sections/Hero'
 import About from './components/sections/About'
@@ -12,6 +13,10 @@ import Footer from './components/layout/Footer'
 import './styles/index.css'
 
 function App() {
+  useEffect(() => {
+    setupAnimationObserver()
+  }, [])
+
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector('.navbar')

@@ -9,6 +9,7 @@
 @import url('components/faq.css');
 @import url('components/contact.css');
 @import url('components/footer.css');
+@import url('animations.css');
 
 * {
   margin: 0;
