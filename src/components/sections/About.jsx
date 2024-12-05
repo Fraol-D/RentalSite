@@ -1,23 +1,63 @@
 import Lottie from 'lottie-react'
+import { FaRocket, FaUsers, FaChartLine } from 'react-icons/fa'
 import animationData from '../../assets/animations/property-dashboard.json'
+import teamImage from '../../assets/img/team.jpeg'
 
 const About = () => {
+  const values = [
+    {
+      icon: <FaRocket />,
+      title: "Innovation",
+      description: "Pioneering smart solutions that revolutionize property management"
+    },
+    {
+      icon: <FaUsers />,
+      title: "Customer Focus",
+      description: "Dedicated to making property management easier for our clients"
+    },
+    {
+      icon: <FaChartLine />,
+      title: "Excellence",
+      description: "Committed to delivering top-tier solutions and support"
+    }
+  ];
+
   return (
     <section id="about" className="about">
       <div className="container">
         <h2>About RentMaster</h2>
         <div className="about-content">
           <div className="about-main">
-            <div className="mission">
-              <h3>Our Mission</h3>
-              <p>To simplify property management through innovative technology solutions.</p>
+            <div className="mission-values">
+              <div className="mission">
+                <h3>Our Mission</h3>
+                <p>To revolutionize property management through innovative technology solutions that empower property owners and managers to work smarter, not harder.</p>
+              </div>
+              
+              <div className="values-grid">
+                {values.map((value, index) => (
+                  <div key={index} className="value-card">
+                    <div className="value-icon">{value.icon}</div>
+                    <h4>{value.title}</h4>
+                    <p>{value.description}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="about-animation">
-              <Lottie 
-                animationData={animationData}
-                loop={true}
-                autoplay={true}
-                style={{ width: '500px', height: '300px', margin: '0 auto' }}
+
+            <div className="about-visuals">
+              <div className="about-animation">
+                <Lottie 
+                  animationData={animationData}
+                  loop={true}
+                  autoplay={true}
+                  style={{ width: '100%', height: 'auto' }}
+                />
+              </div>
+              <img 
+                src={teamImage}
+                alt="Our Team"
+                className="team-image"
               />
             </div>
           </div>

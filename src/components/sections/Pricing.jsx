@@ -1,4 +1,4 @@
-import { FaBuilding, FaEnvelope, FaMobileAlt } from 'react-icons/fa'
+import { FaHome, FaBuilding, FaCity, FaGlobeAmericas, FaEnvelope, FaMobileAlt } from 'react-icons/fa'
 
 const Pricing = () => {
   const plans = [
@@ -8,7 +8,7 @@ const Pricing = () => {
       period: 'Monthly',
       rooms: '1 to 30 rooms',
       sms: '1,500 SMS',
-      icon: <FaBuilding className="plan-icon" />
+      icon: <FaHome className="plan-icon" />
     },
     {
       name: 'Growth Plan',
@@ -24,7 +24,7 @@ const Pricing = () => {
       period: 'Monthly',
       rooms: '90 to 200 rooms',
       sms: '3,000 SMS',
-      icon: <FaBuilding className="plan-icon" />
+      icon: <FaCity className="plan-icon" />
     },
     {
       name: 'Enterprise',
@@ -32,7 +32,7 @@ const Pricing = () => {
       period: 'Monthly',
       rooms: '200 to 500+ rooms',
       sms: '5,000 SMS+',
-      icon: <FaBuilding className="plan-icon" />
+      icon: <FaGlobeAmericas className="plan-icon" />
     }
   ]
 

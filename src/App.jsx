@@ -3,6 +3,8 @@ import { setupAnimationObserver } from './utils/animationObserver'
 import Navbar from './components/layout/Navbar'
 import Hero from './components/sections/Hero'
 import About from './components/sections/About'
+import PainPoints from './components/sections/PainPoints'
+import Solution from './components/sections/Solution'
 import Features from './components/sections/Features'
 import HowItWorks from './components/sections/HowItWorks'
 import Pricing from './components/sections/Pricing'
@@ -37,6 +39,8 @@ function App() {
       <div className="content">
         <Hero />
         <About />
+        <PainPoints />
+        <Solution />
         <Features />
         <HowItWorks />
         <Pricing />
