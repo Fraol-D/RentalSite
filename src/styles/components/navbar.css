@@ -1,4 +1,5 @@
 .navbar {
+  background-color: #ffffff !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -7,10 +8,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: rgba(46, 47, 48, 0.95);
-  backdrop-filter: blur(10px);
   z-index: 1000;
   height: 60px;
+  box-shadow: 0 2px 8px rgba(166, 170, 186, 0.15);
+  border-bottom: 1px solid rgba(166, 170, 186, 0.2);
+}
+
+.logo {
+  color: var(--Primary-Color);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 .nav-links {
@@ -19,13 +27,31 @@
 }
 
 .nav-links a {
-  color: var(--white);
+  color: var(--Text-Color);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  position: relative;
+  font-size: 1rem;
 }
 
 .nav-links a:hover {
-  color: var(--primary);
+  color: var(--Primary-Color);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--Primary-Color);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .auth-buttons {
@@ -35,17 +61,41 @@
 
 .login-btn {
   background: transparent;
-  border: 1px solid var(--primary);
-  color: var(--primary);
+  border: 2px solid var(--Primary-Color);
+  color: var(--Primary-Color);
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: var(--Primary-Color25);
+  transform: translateY(-2px);
 }
 
 .signup-btn {
-  background: var(--primary);
-  color: var(--background);
+  background: var(--Primary-Color);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid var(--Primary-Color);
+}
+
+.signup-btn:hover {
+  background: transparent;
+  color: var(--Primary-Color);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
   .nav-links {
     display: none;
+  }
+  
+  .navbar {
+    padding: 1rem;
   }
 } 

@@ -1,7 +1,7 @@
 .about {
   position: relative;
   padding: 8rem 2rem;
-  background-color: var(--secondary);
+  background-color: var(--Background-Color);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -28,10 +28,11 @@
 .mission {
   position: relative;
   padding: 2rem;
-  background: var(--background);
+  background: var(--Background-Color2);
   border-radius: 12px;
   transition: transform 0.3s ease;
-  border: 1px solid rgba(0, 225, 255, 0.1);
+  border: 1px solid var(--Secondary-Color30);
+  box-shadow: 0 4px 6px var(--Secondary-Color20);
 }
 
 .mission:before {
@@ -41,17 +42,17 @@
   left: 0;
   width: 4px;
   height: 100%;
-  background: var(--primary);
+  background: var(--Primary-Color);
   border-radius: 4px 0 0 4px;
 }
 
 .mission:hover {
   transform: translateY(-5px);
-  border-color: var(--primary);
+  border-color: var(--Primary-Color);
 }
 
 .mission h3 {
-  color: var(--primary);
+  color: var(--Text-Color);
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
 }
@@ -59,8 +60,7 @@
 .mission p {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: var(--white);
-  opacity: 0.9;
+  color: var(--Text-Color-Grey);
 }
 
 .values-grid {
@@ -70,34 +70,34 @@
 }
 
 .value-card {
-  background: var(--background);
+  background: var(--Background-Color2);
   padding: 1.5rem;
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s ease;
-  border: 1px solid rgba(0, 225, 255, 0.1);
+  border: 1px solid var(--Secondary-Color30);
+  box-shadow: 0 4px 6px var(--Secondary-Color20);
 }
 
 .value-card:hover {
   transform: translateY(-5px);
-  border-color: var(--primary);
+  border-color: var(--Primary-Color);
 }
 
 .value-icon {
-  color: var(--accent);
+  color: var(--Accent-Color);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .value-card h4 {
-  color: var(--primary);
+  color: var(--Text-Color);
   margin-bottom: 0.8rem;
   font-size: 1.2rem;
 }
 
 .value-card p {
-  color: var(--white);
-  opacity: 0.9;
+  color: var(--Text-Color-Grey);
   line-height: 1.6;
   font-size: 0.9rem;
 }
@@ -109,16 +109,17 @@
 }
 
 .about-animation {
-  background: var(--background);
+  background: var(--Background-Color2);
   padding: 2rem;
   border-radius: 12px;
-  border: 1px solid rgba(0, 225, 255, 0.1);
+  border: 1px solid var(--Secondary-Color30);
+  box-shadow: 0 4px 6px var(--Secondary-Color20);
 }
 
 .team-image {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  box-shadow: 0 20px 40px var(--Secondary-Color30);
 }
 
 @media (max-width: 1024px) {
