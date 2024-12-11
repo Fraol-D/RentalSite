@@ -15,7 +15,7 @@
 
 .pain-points-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 4rem;
   margin-top: 4rem;
 }
@@ -26,6 +26,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  max-width: 400px;
 }
 
 .pain-points-image {
@@ -36,19 +37,19 @@
 
 .pain-points-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   width: 100%;
 }
 
 .pain-point-card {
   background: var(--Background-Color);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 8px;
   transition: transform 0.3s ease;
   border: 1px solid var(--Secondary-Color30);
   box-shadow: 0 4px 6px var(--Secondary-Color20);
-  min-height: 180px;
+  min-height: 220px;
 }
 
 .pain-point-card:hover {
@@ -64,13 +65,14 @@
 
 .pain-point-card h3 {
   color: var(--Text-Color);
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .pain-point-card p {
   color: var(--Text-Color-Grey);
   line-height: 1.6;
+  font-size: 1rem;
 }
 
 @media (max-width: 1024px) {
