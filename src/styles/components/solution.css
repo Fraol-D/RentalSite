@@ -43,11 +43,12 @@
 
 .solution-card {
   background: var(--Background-Color2);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 8px;
   transition: transform 0.3s ease;
   border: 1px solid var(--Secondary-Color30);
   box-shadow: 0 4px 6px var(--Secondary-Color20);
+  min-height: 250px;
 }
 
 .solution-card:hover {
@@ -77,8 +78,9 @@
   align-items: center;
   gap: 0.5rem;
   color: var(--Text-Color-Grey);
-  margin-bottom: 0.8rem;
-  line-height: 1.6;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  font-size: 0.95rem;
 }
 
 .check-icon {

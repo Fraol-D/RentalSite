@@ -36,8 +36,9 @@
 
 .pain-points-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  width: 100%;
 }
 
 .pain-point-card {
@@ -47,6 +48,7 @@
   transition: transform 0.3s ease;
   border: 1px solid var(--Secondary-Color30);
   box-shadow: 0 4px 6px var(--Secondary-Color20);
+  min-height: 180px;
 }
 
 .pain-point-card:hover {

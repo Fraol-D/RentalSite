@@ -27,10 +27,25 @@
   gap: 1.5rem;
 }
 
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .testimonial-text {
   font-style: italic;
   line-height: 1.6;
-  color: var(--white);
+  color: var(--Text-Color);
+  opacity: 0.9;
 }
 
 .testimonial-author {

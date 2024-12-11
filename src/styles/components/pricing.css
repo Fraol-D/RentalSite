@@ -59,13 +59,14 @@
 }
 
 .price {
+  color: var(--Text-Color);
   margin: 1.5rem 0;
 }
 
 .amount {
+  color: var(--Primary-Color);
   font-size: 2.5rem;
   font-weight: bold;
-  color: var(--white);
 }
 
 .period {

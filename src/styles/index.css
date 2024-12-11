@@ -55,7 +55,7 @@ h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: var(--Primary-Color);
+  color: var(--Text-Color);
 }
 
 button {
