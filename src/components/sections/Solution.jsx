@@ -1,7 +1,6 @@
 import { FaCheckCircle, FaBuilding, FaUsers, FaChartBar, FaShieldAlt } from 'react-icons/fa';
 import '../../styles/components/solution.css';
 import digitalManagement from '../../assets/img/digital-management.jpeg';
-import dashboard from '../../assets/animations/dashboard.gif';
 
 const Solution = () => {
   const solutions = [
@@ -63,11 +62,6 @@ const Solution = () => {
               src={digitalManagement}
               alt="Digital Property Management"
               className="solution-image"
-            />
-            <img 
-              src={dashboard}
-              alt="Property Management Dashboard"
-              className="solution-gif"
             />
           </div>
 

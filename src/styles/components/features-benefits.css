@@ -1,75 +1,85 @@
-.testimonials {
+.features-benefits {
   padding: 8rem 2rem;
   background-color: var(--Background-Color2);
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('../../assets/img/pageBG/top-right-dottedBGimage.png');
-  background-position: top right;
+  background-image: url('../../assets/img/pageBG/bottom-left-dottedBGimage.png');
+  background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.testimonials-grid {
+.features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   width: 100%;
 }
 
-.testimonial-card {
+.feature-card {
   background: var(--Background-Color);
   padding: 2.5rem;
   border-radius: 8px;
   transition: transform 0.3s ease;
   border: 1px solid var(--Secondary-Color30);
   box-shadow: 0 4px 6px var(--Secondary-Color20);
+  min-height: 220px;
 }
 
-.testimonial-card:hover {
+.feature-card:hover {
   transform: translateY(-5px);
   border-color: var(--Primary-Color);
 }
 
-.testimonial-header {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
+.feature-icon {
+  color: var(--Accent-Color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.testimonial-image {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--Primary-Color25);
-}
-
-.testimonial-author h4 {
+.feature-card h3 {
   color: var(--Text-Color);
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
 }
 
-.testimonial-author p {
-  color: var(--Text-Color-Grey);
-  font-size: 0.9rem;
-}
-
-.testimonial-text {
+.feature-card p {
   color: var(--Text-Color-Grey);
   line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Background graphics */
+.bg-dots {
+  position: absolute;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.bg-dots-left {
+  left: -100px;
+  top: 20%;
+}
+
+.bg-dots-right {
+  right: -100px;
+  bottom: 20%;
 }
 
 @media (max-width: 1024px) {
-  .testimonials-grid {
+  .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  .testimonials-grid {
+  .features-grid {
     grid-template-columns: 1fr;
   }
+} 
+
+/* If there are any checkmarks or secondary icons */
+.feature-card .check-icon {
+  color: var(--Primary-Color);
 } 

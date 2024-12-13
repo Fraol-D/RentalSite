@@ -4,6 +4,10 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  background-image: url('../../assets/img/pageBG/bottom-left-dottedBGimage.png');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section-description {
@@ -24,13 +28,13 @@
   position: relative;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.solution-image,
-.solution-gif {
+.solution-image {
   width: 100%;
+  max-width: 500px;
   border-radius: 12px;
   box-shadow: 0 20px 40px var(--Secondary-Color30);
 }
@@ -57,7 +61,7 @@
 }
 
 .solution-icon {
-  color: var(--Primary-Color);
+  color: var(--Accent-Color);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -84,7 +88,7 @@
 }
 
 .check-icon {
-  color: var(--Accent-Color);
+  color: var(--Primary-Color);
   font-size: 1.1rem;
   flex-shrink: 0;
 }
@@ -96,6 +100,11 @@
   
   .solution-visual {
     order: -1;
+    margin-bottom: 2rem;
+  }
+
+  .solution-image {
+    margin: 0 auto;
   }
 }
 

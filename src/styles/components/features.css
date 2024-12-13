@@ -1,47 +1,47 @@
 .features {
-  padding: 6rem 2rem;
-  background-color: var(--background);
+  padding: 8rem 2rem;
+  background-color: var(--Background-Color2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url('../../assets/img/pageBG/top-right-dottedBGimage.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .features-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  max-width: 1200px;
-  margin: 3rem auto 0;
+  width: 100%;
 }
 
 .feature-card {
-  background: var(--secondary);
+  background: var(--Background-Color);
   padding: 2.5rem;
   border-radius: 8px;
-  text-align: left;
-  min-height: 200px;
   transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border: 1px solid var(--Secondary-Color30);
+  box-shadow: 0 4px 6px var(--Secondary-Color20);
+  min-height: 220px;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
-}
-
-.feature-card h3 {
-  color: var(--primary);
-  margin-bottom: 1rem;
-}
-
-.feature-card p {
-  line-height: 1.6;
-  color: var(--white);
-  opacity: 0.9;
+  border-color: var(--Primary-Color);
 }
 
 .feature-icon {
-  color: var(--Primary-Color);
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  color: var(--Accent-Color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: var(--Text-Color);
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .feature-list {
@@ -55,11 +55,12 @@
   padding-left: 1.5rem;
   position: relative;
   line-height: 1.4;
+  color: var(--Text-Color-Grey);
 }
 
 .feature-list li::before {
   content: "✓";
-  color: var(--Accent-Color);
+  color: var(--Primary-Color);
   position: absolute;
   left: 0;
 }
@@ -68,18 +69,20 @@
   text-align: center;
   margin-top: 4rem;
   padding: 3rem;
-  background: var(--secondary);
+  background: var(--Background-Color);
   border-radius: 8px;
+  border: 1px solid var(--Secondary-Color30);
+  box-shadow: 0 4px 6px var(--Secondary-Color20);
 }
 
 .try-now-section h3 {
-  color: var(--primary);
+  color: var(--Text-Color);
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
 .try-now-section p {
-  color: var(--white);
+  color: var(--Text-Color-Grey);
   margin-bottom: 2rem;
   font-size: 1.1rem;
 }
@@ -87,7 +90,7 @@
 .try-now-btn {
   display: inline-block;
   background: var(--Accent-Color);
-  color: white;
+  color: var(--Text-Color);
   padding: 1rem 2rem;
   border-radius: 4px;
   font-weight: 600;
@@ -98,5 +101,11 @@
 .try-now-btn:hover {
   transform: translateY(-2px);
   background: var(--Primary-Color);
+}
+
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
 }
  

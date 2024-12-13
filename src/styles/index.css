@@ -42,6 +42,9 @@ body {
 section {
   width: 100%;
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .container {

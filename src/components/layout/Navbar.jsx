@@ -3,9 +3,9 @@ import "../../styles/components/navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">RentMaster</div>
+      <a href="#hero" className="logo">RentMaster</a>
       <div className="nav-links">
-        <a href="#home">Home</a>
+        <a href="#hero">Home</a>
         <a href="#about">About</a>
         <a href="#features">Features</a>
         <a href="#how-it-works">How It Works</a>
