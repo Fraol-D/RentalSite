@@ -28,11 +28,20 @@
   position: relative;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
 }
 
 .solution-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px var(--Secondary-Color30);
+}
+
+.dashboard-bg-image {
   width: 100%;
   max-width: 500px;
   border-radius: 12px;
