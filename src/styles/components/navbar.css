@@ -12,6 +12,12 @@
   height: 60px;
   box-shadow: 0 2px 8px rgba(166, 170, 186, 0.15);
   border-bottom: 1px solid rgba(166, 170, 186, 0.2);
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(46, 47, 48, 0.98) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -19,11 +25,24 @@
   font-weight: 700;
   font-size: 1.5rem;
   text-decoration: none;
+  z-index: 1001;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 0.5rem;
 }
 
 .nav-links {
   display: flex;
   gap: 2rem;
+  transition: all 0.3s ease;
 }
 
 .nav-links a {
@@ -59,7 +78,7 @@
   gap: 1rem;
 }
 
-.login-btn, .signup-btn {
+.login-btn, .signup-btn, .tryout-btn {
   background: var(--Accent-Color);
   color: var(--Text-Color);
   padding: 0.5rem 1.2rem;
@@ -67,34 +86,67 @@
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
-.login-btn:hover, .signup-btn:hover {
+.login-btn:hover, .signup-btn:hover, .tryout-btn:hover {
   background: var(--Primary-Color);
   transform: translateY(-2px);
 }
 
-.tryout-btn {
-  background: var(--Accent-Color);
-  color: var(--Text-Color);
-  padding: 0.5rem 1.2rem;
-  border-radius: 4px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
 
-.tryout-btn:hover {
-  background: var(--Primary-Color);
-  transform: translateY(-2px);
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: rgba(46, 47, 48, 0.98);
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .auth-buttons {
+    position: fixed;
+    bottom: 2rem;
+    left: -100%;
+    width: 100%;
+    justify-content: center;
+    padding: 0 2rem;
+    transition: all 0.3s ease;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .auth-buttons.active {
+    left: 0;
+  }
+
+  .login-btn, .signup-btn, .tryout-btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-  
   .navbar {
     padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
   }
 } 

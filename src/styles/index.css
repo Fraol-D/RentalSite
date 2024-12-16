@@ -16,17 +16,22 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
   scroll-behavior: smooth;
   background-color: #ffffff;
+  font-size: 16px;
 }
 
 body {
   background-color: #e2e2e2;
   color: var(--Text-Color);
   overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .app {
@@ -45,6 +50,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  overflow: hidden;
 }
 
 .container {
@@ -54,11 +60,28 @@ section {
   padding: 0 2rem;
 }
 
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
 h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;
   color: var(--Text-Color);
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 button {
@@ -67,14 +90,91 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Typography */
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
   section {
     padding: 4rem 1rem;
   }
 
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
   h2 {
     font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) {
+  a:hover, button:hover {
+    transform: none !important;
   }
 } 
